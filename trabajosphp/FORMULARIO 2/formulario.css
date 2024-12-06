@@ -1,0 +1,20 @@
+ /* Estilos para asegurar que el formulario se centre perfectamente en la pantalla */
+ body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(white,black);     /* Fondo claro para el cuerpo */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px; /* Máximo ancho del formulario */
+    padding: 30px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background: linear-gradient(black,white); /* Fondo blanco para el formulario */
+    box-shadow: 0 4px 8px rgba(219, 213, 213, 0.1);
+    color: aliceblue;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card {
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            color: #fff;
+        }
+        .btn-primary {
+            background-color: #6a11cb;
+            border-color: #6a11cb;
+        }
+        .btn-primary:hover {
+            background-color: #2575fc;
+            border-color: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="text-white mb-4">Menú Principal</h1>
+        <div class="row justify-content-center">
+            <!-- Tarjeta Cliente -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestión de Clientes</h5>
+                        <p class="card-text">Gestiona los datos de los clientes de tu base de datos.</p>
+                        <a href="cliente.html" class="btn btn-primary">Ir a Clientes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Producto -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestión de Productos</h5>
+                        <p class="card-text">Gestiona los productos disponibles en tu inventario.</p>
+                        <a href="producto.html" class="btn btn-primary">Ir a Productos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta Factura -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestión de Facturas</h5>
+                        <p class="card-text">Crea y gestiona facturas para los clientes.</p>
+                        <a href="factura.html" class="btn btn-primary">Ir a Facturas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

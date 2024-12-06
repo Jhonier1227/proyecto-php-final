@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Cliente</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background-color: #fff;
+            color: #333;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        .btn-crud {
+            color: #fff !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="text-center mb-4">Gestión de Clientes</h2>
+        <form action="cliente.php" method="POST">
+            <!-- Nombre -->
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input 
+                    type="text" 
+                    name="nombre" 
+                    id="nombre" 
+                    class="form-control" 
+                    placeholder="Ingrese el nombre" 
+                    required>
+            </div>
+            <!-- Apellido -->
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input 
+                    type="text" 
+                    name="apellido" 
+                    id="apellido" 
+                    class="form-control" 
+                    placeholder="Ingrese el apellido" 
+                    required>
+            </div>
+            <!-- Tipo Documento -->
+            <div class="mb-3">
+                <label for="tipo_documento" class="form-label">Tipo de Documento</label>
+                <select name="tipo_documento" id="tipo_documento" class="form-select" required>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="RN">Registro Nacional</option>
+                </select>
+            </div>
+            <!-- Número Documento -->
+            <div class="mb-3">
+                <label for="numero_documento" class="form-label">Número de Documento</label>
+                <input 
+                    type="text" 
+                    name="numero_documento" 
+                    id="numero_documento" 
+                    class="form-control" 
+                    placeholder="Ingrese el número de documento" 
+                    required>
+            </div>
+            <!-- Teléfono -->
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input 
+                    type="text" 
+                    name="telefono" 
+                    id="telefono" 
+                    class="form-control" 
+                    placeholder="Ingrese el teléfono" 
+                    required>
+            </div>
+            <!-- Fecha de Nacimiento -->
+            <div class="mb-3">
+                <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento</label>
+                <input 
+                    type="date" 
+                    name="fecha_nacimiento" 
+                    id="fecha_nacimiento" 
+                    class="form-control" 
+                    required>
+            </div>
+            <!-- Botones CRUD -->
+            <div class="d-flex justify-content-between">
+                <button type="submit" name="accion" value="create" class="btn btn-success btn-crud">Crear</button>
+                <button type="submit" name="accion" value="read" class="btn btn-primary btn-crud">Leer</button>
+                <button type="submit" name="accion" value="update" class="btn btn-warning btn-crud">Actualizar</button>
+                <button type="submit" name="accion" value="delete" class="btn btn-danger btn-crud">Eliminar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

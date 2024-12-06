@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Producto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-container {
+            background-color: #fff;
+            color: #333;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        .btn-crud {
+            color: #fff !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="text-center mb-4">Gestión de Productos</h2>
+        <form action="producto.php" method="POST">
+            <!-- Nombre Producto -->
+            <div class="mb-3">
+                <label for="nombre_producto" class="form-label">Nombre del Producto</label>
+                <input 
+                    type="text" 
+                    name="nombre_producto" 
+                    id="nombre_producto" 
+                    class="form-control" 
+                    placeholder="Ingrese el nombre del producto" 
+                    required>
+            </div>
+            <!-- Botones CRUD -->
+            <div class="d-flex justify-content-between">
+                <button type="submit" name="accion" value="create" class="btn btn-success btn-crud">Crear</button>
+                <button type="submit" name="accion" value="read" class="btn btn-primary btn-crud">Leer</button>
+                <button type="submit" name="accion" value="update" class="btn btn-warning btn-crud">Actualizar</button>
+                <button type="submit" name="accion" value="delete" class="btn btn-danger btn-crud">Eliminar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

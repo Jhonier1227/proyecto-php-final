@@ -1,0 +1,4 @@
+hola estoy haciendo un codigo en php. que me va permitir mostrar este texto en el navegador
+a continuacion hare la prueba.
+es la segunda linea.
+esta ees la tercera.

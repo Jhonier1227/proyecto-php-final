@@ -1,0 +1,23 @@
+*{
+    padding: 0%;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right,blue,red);
+
+}
+
+form{
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+    background: linear-gradient(to right,#ff0000,#fbff00);
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 200px;
+    color: aliceblue;
+    border-radius: 3px;
+    border-color: aliceblue;
+    border: 5px,5px,5px,5px;
+}
